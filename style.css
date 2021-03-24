@@ -1,3 +1,4 @@
+
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -14,6 +15,17 @@
     grid-area: navigation;
     }
     
+
+    
+  
+
+
+                
+
+
+
+
+
 
 * {
     box-sizing: border-box;}
@@ -48,9 +60,7 @@
             transition-delay: 3sec;
             transition-duration: 3sec;
 
-            
-           
-           
+        
           }
           
           .green-circle {
@@ -145,9 +155,9 @@
             border-radius: 50%;}
             
                 
-     /*********************************************************************
-                       mainHeaderStyling
-     **********************************************************************/
+     /*************mainHeaderStyling
+     *******************/
+
      .main-header{
        width: 100%;
        height: 60px;
@@ -193,9 +203,7 @@
        padding-right: 10px;
        height: 20px;
      }
-     /*********************************************************************
-                       mainNavStyling
-     **********************************************************************/
+     /*********mainNavStyling****/
      
      nav{
         background: navy;
@@ -210,9 +218,7 @@
     nav a {
     padding: 3px 20px;
 }
- /*********************************************************************
-                       searchInputStyling
-     **********************************************************************/
+ /*********searchInputStylin****/
      h2{
          padding-left:10px;
      }
@@ -232,9 +238,7 @@
         width:50%;
         height: 28px;
     }
-     /*********************************************************************
-                       AlertbannerStyling
-     **********************************************************************/
+     /***********AlertbannerStyling*******/
     
       
     .alert-banner{
@@ -257,9 +261,7 @@
 .alert-banner-close{
 margin-left:auto;
 }
-      /*********************************************************************
-                       traficChartulStyling
-     **********************************************************************/
+      /***trafficChartulStyling****/
      h4.traffichead {
         font-weight: bold;
         display: flex;
@@ -337,13 +339,10 @@ margin-left:auto;
     canvas#dailyCanvas {
         padding: 5px;
     } */
-/*********************************************************************
-                       socialimgStyling
- **********************************************************************/
-     
-  
-     
-     
+
+
+/*****socialimgStyling***/
+    
      .social-img{
         width: 50px;
         height: 50px;
@@ -657,4 +656,5 @@ section.phone {
     main {
         margin-left: 20px;
     }
- }
+ }       
+
