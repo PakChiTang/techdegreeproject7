@@ -54,11 +54,10 @@
             
           }
           
-          .bell:hover {
-            transition-property: fill;
-            fill:seagreen;
-            transition-delay: 3s;
-            transition-duration: 3s;
+          .icon-bell:hover > svg {
+            transform: scale(1.5);
+            transition-duration: .5s;
+          }
 
         
           }
@@ -238,7 +237,7 @@
         width:50%;
         height: 28px;
     }
-     /***********AlertbannerStyling*******/
+     /********Alert banner Styling*******/
     
       
     .alert-banner{
@@ -261,7 +260,7 @@
 .alert-banner-close{
 margin-left:auto;
 }
-      /***trafficChartulStyling****/
+      /***traffic Chart ul Styling****/
      h4.traffichead {
         font-weight: bold;
         display: flex;
@@ -362,8 +361,8 @@ margin-left:auto;
        justify-content: center;
        align-content: center;
        padding-left: 10px;
-       /* padding-top: 15px; */
-       /* padding-bottom: 15px; */
+       /* padding-top:15px; */
+       /* padding-bottom:15px; */
        padding-right: px;
     } 
 
@@ -371,17 +370,26 @@ margin-left:auto;
         display:flex;
         flex-direction:column;
     }
-    .wrapper{
+    .center > .wrapper {
+        display:grid;
+        grid-template-columns: 1fr;
+        border:  solid lightgrey 1px;
+        background:whitesmoke;
+        margin:10px;
+    }
+    
+    .wrapper > .wrapper {
         display:grid;
         grid-template-columns: 1fr 2fr;
         border:  solid lightgrey 1px;
         background:whitesmoke;
         margin:10px;
     }
+
     a {
         font-size: 13px;
     }
-.rapper{
+.wrapper{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
     margin-top: 20px;
@@ -414,7 +422,7 @@ margin-left:auto;
         padding-bottom:5px;
     } 
     h3{
-        /* text-align:center; */
+        /* text-align: center; */
     } 
      
        #timezone,
@@ -480,14 +488,21 @@ margin-left:auto;
      .send{
          background:#5fd494;
      } 
+
      /*********************************************************************
                       
      **********************************************************************/
+
       @media(min-width:768px){
           body{
               margin: 20px;
           }
+          .center > .wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
        
+
+
  nav{
              display:grid;
              grid-template-rows: 100px 100px 100px 100px;
@@ -539,6 +554,7 @@ p, a{
 .numb{
     font-size: 26px;
 }
+
 .members-container-2 {
     display: grid;
     grid-template-columns: 50px 1fr 1fr;
@@ -598,7 +614,7 @@ svg#Line_2 {
     grid-column: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    /* flex-wrap: nowrap; */
+    /* flex-wrap: no wrap; */
     /* overflow: hidden; */
     /* grid-template-columns: 1fr 1fr; */
     /* margin: auto; */
